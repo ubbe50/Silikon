@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
     --clr-gray-100: #F3F6FF;
@@ -137,6 +137,17 @@ h1, h2, h3, h4, h5, h6 {
    font-weight: 800;
 }
 
+.h6 {
+    font-size: 1rem;
+    color: var(--clr-text-heading);
+    font-weight: 800;
+}
+
+.navigation {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .d4 {
    font-size: 3.5rem; 
    color: var(--clr-text-heading);
@@ -144,6 +155,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .text-lg {
     font-size: 1.125rem;
+}
+
+.text-s {
+    font-size: 0.875rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
 }
 
 .btn {
@@ -742,12 +761,15 @@ h1, h2, h3, h4, h5, h6 {
     }
     .payment-card {
         display: flex;
-        grid-column-start: 1,2;
-        grid-row-start: 1,2;
-        text-align: start;
-        gap: 1rem;
+        text-align: left;
+        flex-direction: column;
         align-items: flex-start;
     }
+    .payment-btns {
+       
+        width: 150px;
+        
+       }
     .icon-container {
         background-color: var(--clr-logo-bg);
         padding: 1rem;
@@ -791,6 +813,224 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*PAYMENT END*/
+
+
+
+
+/*CLIENTS START*/
+.clients-section {
+    padding-block: var(--section-spacing);
+    background-color: var(--clr-bg-100);
+    
+
+
+    .client {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;       
+    }
+    .client-item { 
+        text-align: left;
+
+    }
+    .client-card {
+        padding: 1rem;
+        width: 26rem;
+        height: 20.5rem;
+        background-color: #fff;
+        text-align: left;
+
+    }
+    .rating {
+        width: 5.5rem;
+        height: 1rem;
+        
+    }
+    .designer-avatar {
+        max-height: 3rem;
+    }
+    .designer-card {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        
+        
+
+
+    }   
+
+   
+
+    
+    /*@media (width < 768px) {
+        .client-item:first-of-type,
+        .client-item:last-of-type {
+        display: none;
+    }
+    }*/
+}
+/*CLIENTS END*/
+
+/* FAQ START*/
+
+.faq {
+    padding-top: 6rem;
+    /*padding-bottom: 4rem;*/
+    text-align: left;
+    background-color: var(--clr-bg);
+    background-image: linear-gradient(to top, rgba(99, 101, 241, 0.1), rgba(219, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07 83%));
+
+
+    .content {
+        padding-bottom: 3rem;
+        gap: 5rem;
+    }
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    
+}
+    .support-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    
+
+            .support-card-chat {
+                display: flex;
+                flex-direction: column;
+            
+                width: 14.25rem;
+                height: 10.25rem;
+                padding: .5em 1em;
+                border-radius: var(--br-l);
+                border-color: var(--clr-gray-300);
+                border-style: solid;
+                text-align: left;
+                
+                img {
+                        height: 1.75em;
+                }
+            }
+
+            .support-card-phone {
+                display: flex;
+                flex-direction: column;
+            
+                width: 12.25rem;
+                height: 10.25rem;
+                padding: .5em 1em;
+                border-radius: var(--br-l);
+                border-color: var(--clr-gray-300);
+                border-style: solid;
+                
+            
+            
+
+            img {
+                height: 1.75em;
+            }
+    }
+    .contact-green {
+      color: #22C55E;
+
+    }
+    .contact-primary {
+        color: var(--clr-primary) ;
+    }
+    .contact-us {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        img {
+            height: 1.25em;
+            
+         }
+    }
+    .faq-cards {
+        display: flex;
+        flex-direction: column;  
+    
+        gap: 2rem;
+       
+        margin-bottom: 10rem;
+    }
+    .question-cards {
+       
+        align-items: left;
+        justify-content: left;
+        gap: 1rem;
+        
+        
+        
+    }
+    .question-cards-open {
+        inline-size: 46rem;
+         text-align: left;
+         justify-content: left;
+         gap: 1rem;
+         
+         
+         
+     }
+
+
+    
+
+
+
+  
+
+
+
+
+    
+   }
+
+
+}
+/*FAQ END*/
+/*SUBSCRIBE START*/
+.subscribe {
+   
+   
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    padding: 5rem;
+    width: 81rem;
+    height: 14rem;
+    background-color: var(--clr-gray-100);
+    text-align: left;
+    img {
+        height: 4.8em;
+        
+    }
+     .together {
+        display: flex;
+        align-items: left;
+        max-height: 4.8rem;
+     }
+}
+/*SUBSCRIBE END*/
+/* COPYRIGHT START*/
+.copyright {
+text-align: center;
+padding: 3rem;
+}
+/*COPYRIGHT END*/
+
+
+
 
 /*  Animations  */
 
